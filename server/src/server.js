@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       'http://localhost:5173', // Локальная разработка
-      'https://your-vercel-app.vercel.app', // Замените на ваш URL Vercel
+      'https://vite-nu-opal.vercel.app', // Замените на ваш URL Vercel
     ],
     credentials: true,
   })
