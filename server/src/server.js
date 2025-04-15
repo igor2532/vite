@@ -7,7 +7,15 @@ const nomenclatureRoutes = require('./routes/nomenclatures');
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      'http://localhost:5173', // Локальная разработка
+      'https://your-vercel-app.vercel.app', // Замените на ваш URL Vercel
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
