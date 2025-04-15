@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Секреты и конфигурация
+.env
+
+# Временные файлы
+*.log
+*.tmp
+
+# Сборка клиента
+client/dist/
+client/build/
+
+# База данных
+*.sql.gz
+*.sqlite
